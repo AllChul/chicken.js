@@ -1,6 +1,6 @@
 define([
 	"jquery",
-	"chicken/version"
+	"version"
 ], function($, Version){
 	var Chicken = function(){
 		//Constructor

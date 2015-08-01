@@ -1,13 +1,12 @@
 requirejs.config({
-    "baseUrl": "../",
+    "baseUrl": "../sources",
     "paths": {
-      "jquery": "bower_components/jquery/dist/jquery",
-      "chicken": "sources"
+      "jquery": "../bower_components/jquery/dist/jquery",
     }
 });
 
 requirejs([
-	"chicken/chicken"
+	"chicken"
 ],function (CC) {
     console.log("Name : "+CC.name);
     console.log("Version : "+CC.version);
