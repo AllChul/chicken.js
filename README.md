@@ -2,7 +2,7 @@
 Chicken.js is internalization library based on javascript. It works on brower side, and translate web pages using translation dictionary. 
 
 # Why Chicken?
-Fried chichken is truth and peace. Americans, Europeans, Asians and whole world around peoples loves the chicken. Someone do not eat pork and someone do not eat shellfish, but everyone eat the chicken. Therefore the chicken is most suitable icon for representation of internationalization.<br/>
+Fried chichken is truth and peace. Americans, Europeans, Asians and all are loving the chicken. Someone do not eat pork or some other do not eat shellfish, but everyone eat the chicken. Therefore the chicken is the most resonable icon of internationalization.<br/>
 Reference : http://www.inven.co.kr/board/powerbbs.php?come_idx=2097&l=308286
 
 # Install
