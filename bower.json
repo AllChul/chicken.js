@@ -1,0 +1,27 @@
+{
+  "name": "Chicken.js",
+  "version": "0.0.1",
+  "homepage": "https://github.com/AllChul/chicken.js",
+  "authors": [
+    "ivorycirrus <ivorycirrus@gmail.com>"
+  ],
+  "description": "Chicken.js is internalization library based on javascript.",
+  "main": "./sources/chicken.js",
+  "keywords": [
+    "javascript",
+    "i18n",
+    "l10n"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "~2.*.*",
+    "requirejs": "~2.*.*"
+  }
+}
