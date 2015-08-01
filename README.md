@@ -12,3 +12,5 @@ $ npm install -g bower
 $ bower install
 ```
 
+# Licence
+MIT
