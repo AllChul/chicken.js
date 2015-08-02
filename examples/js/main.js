@@ -8,8 +8,20 @@ requirejs.config({
 requirejs([
 	"chicken"
 ],function (CC) {
+    // Retrieve Chicken.js library information.
     console.log("Name : "+CC.name);
     console.log("Version : "+CC.version);
     console.log("Description : "+CC.description);
-    console.log("Sample Text : "+CC.Translate("#sample"));
+
+    // Configuration
+    CC.SetServerAddress("http://localhost/i18n");
+    console.log(CC.Config);
+
+    CC.Load(
+    	"example", "ko", "kr", 
+    	function(data, err){console.log(data)},
+    	undefined );
+
+    // Run translate
+    CC.Translate();
 });
