@@ -13,6 +13,8 @@ define([
 
 		Config : {},
 
+		TranslationDictionsry : {},
+
 		Error : function(message, err){
 			if(typeof err == "function") err(message);
 			else console.log("[Error] "+message);

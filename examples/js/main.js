@@ -15,11 +15,13 @@ requirejs([
 
     // Configuration
     CC.SetServerAddress("http://localhost/i18n");
-    console.log(CC.Config);
 
+    // Load translation dictionary
     CC.Load(
     	"example", "ko", "kr", 
-    	function(data, err){console.log(data)},
+    	function(data, err){
+            console.log("Loaded data : "+JSON.stringify(data));
+        },
     	undefined );
 
     // Run translate
