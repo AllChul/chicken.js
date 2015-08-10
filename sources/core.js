@@ -11,10 +11,6 @@ define([
 		description : "Chicken.js is internalization library based on javascript.",
 		constructor : Chicken,
 
-		Config : {},
-
-		TranslationDictionsry : {},
-
 		Error : function(message, err){
 			if(typeof err == "function") err(message);
 			else console.log("[Error] "+message);

@@ -1,0 +1,19 @@
+define([
+	"core"
+], function(CC){
+	//Constructor
+	CC.Config = function(_config){
+		if(_config !== undefined){
+			if(_config.repositoryType !== undefined) this.Config.repositoryType = _config.repositoryType;
+			if(_config.repositoryAddress !== undefined) this.Config.repositoryAddress = _config.repositoryAddress;
+			if(_config.pageId !== undefined) this.Config.pageId = _config.pageId;
+			if(_config.language !== undefined) this.Config.language = _config.language;
+			if(_config.locale !== undefined) this.Config.locale = _config.locale;
+		}
+	};
+
+	// Kinds of repository type : file, url
+	CC.Config.repositoryType = undefined;
+	// Repository address (URL)
+	CC.Config.repositoryAddress = undefined;
+});

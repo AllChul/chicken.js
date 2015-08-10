@@ -2,8 +2,8 @@ define([
 	"core",
 	"jquery"
 ], function(CC, jQuery){
-	CC.Translate = function(err){
-		if(this.TranslationDictionary === undefined) 
+	CC.Translate = function(cbTranslateComplete, err){
+		if(this.Dictionary === undefined) 
 		{
 			CC.Error("Translation dicrionary is not loaded yet.", err);
 			return;
@@ -23,8 +23,13 @@ define([
 			}
 
 			//Replace element's body to translate
-			_translated = CC.TranslationDictionary.dictionary[_key];
+			_translated = CC.Dictionary.data[_key];
 			if(_translated !== undefined) jQuery(this).html( _translated );
 		});
+
+		//Translation completed
+		if(cbTranslateComplete !== undefined && typeof cbTranslateComplete === "function"){
+			cbTranslateComplete();
+		}
 	};
 });

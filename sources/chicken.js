@@ -1,6 +1,6 @@
 define([
 	"core",
-	"etc/config",
+	"env/config",
 	"lib/loader",
 	"lib/translator"
 ], function(Chicken){
