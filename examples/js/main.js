@@ -14,7 +14,7 @@ requirejs([
     // Configulations
     CC.Config({
         // Repository Setup
-        repositoryType : "file",
+        repositoryType : "static-json",
         repositoryAddress : "./i18n/",
         // Dictionary Setup
         pageId : "example",

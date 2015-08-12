@@ -1,7 +1,8 @@
 define([
 	"jquery",
-	"core"
-], function(jQuery, CC){
+	"core",
+	"lib/dictionary/static-json"
+], function(jQuery, CC , StaticJsonDictionary){
 
 	// Load translation dictionary
 	// @param : pageId, lang, locale, cbLoadComplete, err
@@ -32,34 +33,11 @@ define([
 
 		switch(CC.Config.repositoryType)
 		{
-			case "file":
-				CC._LoadFileDictionary(cbLoadComplete, err);
+			case "static-json":
+				StaticJsonDictionary(cbLoadComplete, err);
 				break;
 			default:
 				this.Error("Repository type '"+CC.Config.repositoryType+"' is not supported ", err);
 		}
 	}
-
-	// Load dictionary from json file
-	CC._LoadFileDictionary = function(cbLoadComplete, err){
-		var fileURL = CC.Config.repositoryAddress+"/"+CC.Config.language+"-"+CC.Config.locale+"/strings.json";
-		jQuery.getJSON(fileURL, function(_data){
-			if(_data !== undefined)
-			{
-				CC.Dictionary = {
-					pageId : CC.Config.pageId,
-					lang : CC.Config.language,
-					locale : CC.Config.locale,
-					version : _data["version"], // dictionary version maintained by translation server
-					data : _data[CC.Config.pageId] // Translation dictionary here
-				};
-			} else {
-				CC.Dictionary = undefined;
-			}
-
-			if(typeof cbLoadComplete === "function"){
-				cbLoadComplete(CC.Dictionary);
-			}
-		});
-	};
 });
