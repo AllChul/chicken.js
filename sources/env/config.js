@@ -2,7 +2,7 @@ define([
 	"core"
 ], function(CC){
 	//Constructor
-	CC.Config = function(_config){
+	var _Config = function(_config){
 		if(_config !== undefined){
 			if(_config.repositoryType !== undefined) this.Config.repositoryType = _config.repositoryType;
 			if(_config.repositoryAddress !== undefined) this.Config.repositoryAddress = _config.repositoryAddress;
@@ -13,7 +13,9 @@ define([
 	};
 
 	// Kinds of repository type : file, url
-	CC.Config.repositoryType = undefined;
+	_Config.repositoryType = undefined;
 	// Repository address (URL)
-	CC.Config.repositoryAddress = undefined;
+	_Config.repositoryAddress = undefined;
+
+	return _Config;
 });

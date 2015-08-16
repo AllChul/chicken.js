@@ -3,6 +3,11 @@ define([
 	"env/config",
 	"lib/loader",
 	"lib/translator"
-], function(Chicken){
-	return Chicken;
+], function(CC, config, loader, translator){
+
+	CC.Config = config;
+	CC.Load = loader;
+	CC.Translate = translator;
+
+	return CC;
 });

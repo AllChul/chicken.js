@@ -6,7 +6,7 @@ define([
 
 	// Load translation dictionary
 	// @param : pageId, lang, locale, cbLoadComplete, err
-	CC.Load = function(cbLoadComplete, err){
+	var _Loader = function(cbLoadComplete, err){
 		// Check connection informations
 		if(CC.Config.repositoryType === undefined || CC.Config.repositoryAddress === undefined) 
 		{
@@ -40,4 +40,6 @@ define([
 				this.Error("Repository type '"+CC.Config.repositoryType+"' is not supported ", err);
 		}
 	}
+
+	return _Loader;
 });

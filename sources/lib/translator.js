@@ -2,7 +2,7 @@ define([
 	"core",
 	"jquery"
 ], function(CC, jQuery){
-	CC.Translate = function(cbTranslateComplete, err){
+	var _Translate = function(cbTranslateComplete, err){
 		if(this.Dictionary === undefined) 
 		{
 			CC.Error("Translation dicrionary is not loaded yet.", err);
@@ -32,4 +32,6 @@ define([
 			cbTranslateComplete();
 		}
 	};
+	
+	return _Translate;
 });

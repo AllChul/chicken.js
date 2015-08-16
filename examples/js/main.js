@@ -18,8 +18,8 @@ requirejs([
         repositoryAddress : "./i18n/",
         // Dictionary Setup
         pageId : "example",
-        language: "ko",
-        locale: "kr"
+        language: "ja",
+        locale: "jp"
     });
 
     // Load translation dictionary and run translate
