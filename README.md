@@ -25,7 +25,9 @@ The 'chicken' attribute interprets the kinds of elements', and the 'season' is u
 <h1 class="title" chicken="text">Application Example</h1>
 <!-- If there has so long sentences or HTML elements, you can use 'senson' attribute -->
 <div class="description" chicken="text" season="introduction">
-Chicken.js is internalization library based on javascript. It works on brower side, and translate web pages using translation dictionary.</div>
+Chicken.js is internalization library based on javascript. 
+It works on brower side, and translate web pages using translation dictionary.
+</div>
 ```
 ### 2. Load your translation javascript module using 'require.js'
 Insert below script tag in yout html page. The 'data-main' attribute is translator module which is writing next step.
