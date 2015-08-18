@@ -26,7 +26,7 @@ It must include version number, and add dictionary with page names.<br/>
 Each page have their own dictionary which composed with key-value pairs.
 ``` javascript
 {
-	"version" : x.x.x
+	"version" : "x.x.x" ,
 	"%page_name1%" : {
 	    "%key1%" : "%translation1%",
 	    "%key2%" : "%translation2%",
