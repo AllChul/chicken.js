@@ -1,5 +1,6 @@
 #Documents
-Here are chicken.js documentations. These have 'Chicken.js API References'  and 'Interface Control Document(ICD)'.
+Here are chicken.js documentations. <br/>
+These have 'Chicken.js API References'  and 'Interface Control Document(ICD)'.
 
 ### API Reference
 API reference and documentation for using Chicken.js library.<br/>
