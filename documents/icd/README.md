@@ -20,7 +20,7 @@ Here is a examples of the directory structure for local file dictionsries. '%i18
          +-- strings.json
 ```
 
-# Dictionary file format
+## Dictionary file format
 The local file dictionary file have informations of all pages. <br/>
 It must include version number, and add dictionary with page names.<br/>
 Each page have their own dictionary which composed with key-value pairs.
