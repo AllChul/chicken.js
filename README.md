@@ -15,7 +15,7 @@ $ bower install
 ```
 
 # Usages
-We have release version of chicken.js. Unfortunately we have to use development version yet.
+Chicken.js is not released. Unfortunately we have to use development version yet.
 
 ### 1. Adding attributes 'chicken' to HTML elements.
 Adding attributes 'chicken' for translating text. If there has so long sentences or HTML elements, you can use 'senson' attribute to set customised translation key.<br/>
