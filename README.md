@@ -7,11 +7,28 @@ Youtube : https://www.youtube.com/watch?v=MYpSoP2kw00<br/>
 Korean script : http://www.inven.co.kr/board/powerbbs.php?come_idx=2097&l=308286
 
 # Install
-Chicken.js written in AMD format. And It using jQuery for DOM parser. You can install dependencies easily using 'Bower'.
+Chicken.js written in AMD format. And It using jQuery for DOM parser. You can install dependencies easily using 'Bower'. Here is Ubuntu linux example. Other environments are generally simalar. (Install node.js , bower and run bower script.)
 ```
-$ npm install -g bower
+$ sudo apt-get install nodejs
+$ sudo npm install -g bower
 $ bower install
 ```
+
+# Usages
+Chicken.js is not released. Unfortunately we have to use development version yet.<br/>
+Please see [API Reference](./documents/api-doc/).
+
+# Dependencies 
+
+### For use
+* require.js ~ 2.x.x
+* jquery ~ 2.x.x
+
+### For development
+* node.js 
+* bower
+* require.js ~ 2.x.x
+* jquery ~ 2.x.x
 
 # Licence
 MIT
