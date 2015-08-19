@@ -18,8 +18,13 @@ $ git clone https://github.com/AllChul/chicken.js.git
 ```
 
 # Usages
+### Writing applications
 Chicken.js is not released. Unfortunately we have to use development version yet.<br/>
-Please see [API Reference](./documents/api-doc/).
+Please see [API Reference](./documents/api-doc/) and [examples](./examples) directory.
+
+### Make own dictionary
+Chicken.js is currently supporting local-file dictionary.<br/>
+Please see [Interface Control Document](./documents/icd/).
 
 # Dependencies 
 
