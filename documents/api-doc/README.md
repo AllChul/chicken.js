@@ -1,9 +1,9 @@
 # API Reference
 This is API references of Chicken.js.
 
-# 1. Getting Started
+# Getting Started
 
-### 1.1 Adding attributes 'chicken' to HTML elements.
+### Adding attributes 'chicken' to HTML elements.
 Adding attributes 'chicken' for translating text. If there has so long sentences or HTML elements, you can use 'senson' attribute to set customised translation key.<br/>
 The 'chicken' attribute interprets the kinds of elements', and the 'season' is used for translation subkey to translate and managing translation process.
 ``` html
@@ -16,14 +16,14 @@ It works on brower side, and translate web pages using translation dictionary.
 </div>
 ```
 
-### 1.2 Load your translation javascript module using 'require.js'
+### Load your translation javascript module using 'require.js'
 Insert below script tag in yout html page. The 'data-main' attribute is translator module which is writing next step.
 ``` html
 <!-- Load application translator module -->
 <script data-main="js/main" type="text/javascript" src="../bower_components/requirejs/require.js"></script>
 ```
 
-### 1.3 Write main application.
+### Write main application.
 Write main application javascript module with AMD format.
 ``` javascript
 //-- /examples/js/main.js
@@ -58,9 +58,9 @@ requirejs([
 });
 ```
 
-# 2. Setup
+# Setup
 
-### 2.1 Module dependencies
+## Module dependencies
 Chicken.js depends on jquery. And it is refered as 'jquery'. <br/>
 Therefore if you want to use chicken.js, please define 'jquery' module in your require.js configuration.
 ``` javascript
@@ -73,7 +73,7 @@ requirejs.config({
 });
 ```
 
-### 2.2 Configurations
+## Configration
 It need to load translation dictionary before translating. <br/>
 You can use ```Config``` function to setup environment settings.<br/>
 
@@ -104,7 +104,7 @@ requirejs([
 });
 ```
 
-# 3. Load Dictionary
+## Load Dictionary
 Load translation dictionary data into Chicken.js's dictionary cache.
 ``` javascript
 requirejs([
@@ -117,7 +117,7 @@ requirejs([
 });
 ```
 
-# 4. Translation
+# Translation
 Do translate. You have to load translation dictionary before calling ```Translate``` function.
 ``` javascript
 requirejs([
