@@ -10,8 +10,11 @@ Korean script : http://www.inven.co.kr/board/powerbbs.php?come_idx=2097&l=308286
 Chicken.js written in AMD format. And It using jQuery for DOM parser. You can install dependencies easily using 'Bower'. Here is Ubuntu linux example. Other environments are generally simalar. (Install node.js , bower and run bower script.)
 ```
 $ sudo apt-get install nodejs
+
 $ sudo npm install -g bower
 $ bower install
+
+$ git clone https://github.com/AllChul/chicken.js.git
 ```
 
 # Usages
