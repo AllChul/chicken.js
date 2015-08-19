@@ -71,6 +71,7 @@ requirejs.config({
       "jquery": "../bower_components/jquery/dist/jquery"
     }
 });
+```
 
 ## Configurations
 It need to load translation dictionary before translating. <br/>
@@ -82,8 +83,8 @@ Parameter         | Description
 repositoryType    | Repository type. Currently, chicken.js only supports local file dictionary. 
 repositoryAddress | Location of the repository. It can be file address, web URL or any accessable locatio using web browsers.
 pageId            | Unique page ID. It will be using in group names of tranalations in the page.
-language          | Language code within 2 characters. See [ISO 639-1 Code](https://www.loc.gov/standards/iso639-2/php/code_list.php) 
-locale            | Country code within 2 characters. See [ISO 1366-1 Alpha-2](https://www.iso.org/obp/ui/#search/code/) 
+language          | Language code within 2 characters. [See ISO 639-1 Code](https://www.loc.gov/standards/iso639-2/php/code_list.php) 
+locale            | Country code within 2 characters. [See ISO 1366-1 Alpha-2](https://www.iso.org/obp/ui/#search/code/) 
 
 ###Configuration Example
 ``` javascript
