@@ -26,16 +26,14 @@ It must include version number, and add dictionary with page names.<br/>
 Each page have their own dictionary which composed with key-value pairs.
 ``` javascript
 {
-	"version" : "x.x.x" ,
-	"%page_name1%" : {
-	    "%key1%" : "%translation1%",
-	    "%key2%" : "%translation2%",
-	    "%key3%" : "%translation3%",
-	    "%key4%" : "%translation4%"
-	    // more on ...
-    },
-    "%page_name2%" : {
-        // same format with %page_name1%
-    }
+	"success" : { "success" : %isSuccess% , "message" : "%processing_messages%"},
+    "pageid" : "%pageID%",
+    "version" : "%version%",
+    "language" : "%language_code%",
+    "locale" : "%locale_code%",
+    "data" : [
+        {"chicken" : "%key%", "season" : "%kind%", "trans_value" : "%translation_data%"},
+        // more on..
+    ]
 }
 ```
