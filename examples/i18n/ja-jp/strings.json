@@ -1,9 +1,13 @@
 {
+	"success" : { "success" : true},
+	"pageid" : "example",
 	"version" : "0.0.1",
-	"example" : {
-		"Application Example" : "アプリケーションの例",
-		"introduction" : "Chicken.jsはジャバスクリプトのベースの多言語サポートライブラリです。 このライブラリは、Webブラウザ上で動作し、翻訳辞書を利用して、Webページを翻訳することができます。",
-		"Why Chicken?" : "なぜチキン",
-		"desc_whychicken" : "チキンは平和で真理です。 アメリカ人、ヨーロッパ人、アジア人をはじめとするすべての人々がチキンが好きです。 ある者は豚肉を食べずに、別のいくつかがは貝を食べませんが、唯一のチキンは、誰もが好きです。 したがって、このチキンはすべてを合わせることができる国際化の表象とすることができます。<br/> ユーチューブ : <a href=\"https://www.youtube.com/watch?v=MYpSoP2kw00\">https://www.youtube.com/watch?v=MYpSoP2kw00</a><br/>韓国語字幕 : <a href=\"http://www.inven.co.kr/board/powerbbs.php?come_idx=2097&l=308286\">http://www.inven.co.kr/board/powerbbs.php?come_idx=2097&l=308286</a>"
-	}
+	"language" : "ja",
+	"locale" : "jp",
+	"data" : [
+		{"chicken" : "main_title" , "season" : "text", "trans_value" : "アプリケーションの例"},
+		{"chicken" : "introduction" , "season" : "text", "trans_value" : "Chicken.jsはジャバスクリプトのベースの多言語サポートライブラリです。 このライブラリは、Webブラウザ上で動作し、翻訳辞書を利用して、Webページを翻訳することができます。"},
+		{"chicken" : "header_whychicken" , "season" : "text", "trans_value" : "なぜチキン"},
+		{"chicken" : "desc_whychicken" , "season" : "text", "trans_value" : "チキンは平和で真理です。 アメリカ人、ヨーロッパ人、アジア人をはじめとするすべての人々がチキンが好きです。 ある者は豚肉を食べずに、別のいくつかがは貝を食べませんが、唯一のチキンは、誰もが好きです。 したがって、このチキンはすべてを合わせることができる国際化の表象とすることができます。<br/> ユーチューブ : <a href=\"https://www.youtube.com/watch?v=MYpSoP2kw00\">https://www.youtube.com/watch?v=MYpSoP2kw00</a><br/>韓国語字幕 : <a href=\"http://www.inven.co.kr/board/powerbbs.php?come_idx=2097&l=308286\">http://www.inven.co.kr/board/powerbbs.php?come_idx=2097&l=308286</a>"}
+	]
 }

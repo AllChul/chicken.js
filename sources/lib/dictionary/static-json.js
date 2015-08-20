@@ -7,13 +7,7 @@ define([
 		jQuery.getJSON(fileURL, function(_data){
 			if(_data !== undefined)
 			{
-				CC.Dictionary = {
-					pageId : CC.Config.pageId,
-					lang : CC.Config.language,
-					locale : CC.Config.locale,
-					version : _data["version"], // dictionary version maintained by translation server
-					data : _data[CC.Config.pageId] // Translation dictionary here
-				};
+				CC.Dictionary = _data;
 			} else {
 				CC.Dictionary = undefined;
 			}

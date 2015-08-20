@@ -9,22 +9,32 @@ define([
 			return;
 		}
 
-		jQuery("[chicken='text']").each(function(index, obj){
-			
-			//Translation key
-			var _key = undefined;
-			var _translated = undefined;
+		jQuery("[chicken]").each(function(index, translateObj){
 
-			//Parsing key on element's text. But it were seasoning, the key based on the 'season' attribute.
-			if(jQuery(this).attr('season') !== undefined){
-				_key = jQuery(this).attr('season');
-			} else {
-				_key = jQuery(this).text().trim();
+			var translateData = undefined;
+
+			// Translate Text
+			if(jQuery(this).attr('season').search("text") >= 0){
+				// Search translation text
+				translateData = jQuery.grep(CC.Dictionary.data, function(dictionaryData){
+					return (
+						dictionaryData.chicken === jQuery(translateObj).attr("chicken") 
+						&& dictionaryData.season === "text"
+					);
+				});
+			} 
+			// Another translation logic here
+			else
+			{
+
 			}
 
 			//Replace element's body to translate
-			_translated = CC.Dictionary.data[_key];
-			if(_translated !== undefined) jQuery(this).html( _translated );
+			if(translateData !== undefined && translateData.length > 0)
+			{
+				jQuery(this).html( translateData[0].trans_value );
+			}
+			
 		});
 
 		//Translation completed
