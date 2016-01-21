@@ -4,7 +4,7 @@ define([
 ], function(jQuery, CC){
 	var _JSONServerDictionaryLoader = function(cbLoadComplete, err){
 		jQuery.ajax({
-			url : CC.Config.repositoryAddress,
+			url : CC.Config.repositoryAddress+"/transAll",
 			dataType : "jsonp",
 			jsonp : "callback",
 			data : {

@@ -8,14 +8,15 @@ requirejs.config({
 
 // Translation example codes using Chicken.js
 requirejs([
-	"chicken"
+	"chicken",
+    "dev/dev-console"
 ],function (CC) {
 
     // Configulations
     CC.Config({
         // Repository Setup
         repositoryType : "server-json",
-        repositoryAddress : "http://192.168.0.27:3000/api/transAll",
+        repositoryAddress : "http://192.168.0.27:3000/api",
         // Dictionary Setup
         pageId : "example",
         language: "ko",

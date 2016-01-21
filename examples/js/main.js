@@ -2,22 +2,21 @@
 requirejs.config({
     "baseUrl": "../sources",
     "paths": {
-      "jquery": "../bower_components/jquery/dist/jquery",
-      "chickenDev" : "dev/chicken-dev"
+      "jquery": "../bower_components/jquery/dist/jquery"
     }
 });
 
 // Translation example codes using Chicken.js
 requirejs([
 	"chicken",
-    "chickenDev"
+    "dev/dev-console"
 ],function (CC) {
 
     // Configulations
     CC.Config({
         // Repository Setup
         repositoryType : "static-json",
-        repositoryAddress : "./i18n/",
+        repositoryAddress : "./i18n",
         // Dictionary Setup
         pageId : "example",
         language: "ko",

@@ -1,3 +1,5 @@
+define(function(){
+
 window.addEventListener('translate-complated', function (e) { 
 
 	// Container for developers menu
@@ -113,7 +115,7 @@ window.addEventListener('translate-complated', function (e) {
 			};
 
 			$.ajax({
-				url : "http://192.168.0.23:3000/api/transRequest",
+				url : window.Chicken.Config.repositoryAddress+"/transRequest",
 				dataType : "jsonp",
 				jsonp : "callback",
 				data : newItem,
@@ -126,3 +128,5 @@ window.addEventListener('translate-complated', function (e) {
 	});
 
  }, false);
+
+});
