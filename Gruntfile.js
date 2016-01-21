@@ -5,6 +5,10 @@ module.exports = function(grunt) {
     //package configuration file
     pkg: grunt.file.readJSON('package.json'),
 
+    jshint:{
+        all: ['app.js', 'sources/*.js', 'sources/**/*.js']
+    },
+
     // chicke.js module compile
     requirejs: {
       compile: {
@@ -51,14 +55,19 @@ module.exports = function(grunt) {
   });
 
   // Load the plugin 
+  grunt.loadNpmTasks('grunt-contrib-jshint');
   grunt.loadNpmTasks('grunt-contrib-requirejs');
   grunt.loadNpmTasks('grunt-contrib-copy');
 
   // Define Tasks.
-  grunt.registerTask('build', [
+  grunt.registerTask('build', [    
     'requirejs',         // compile require.js modules
     'copy:chicken',      // copy reaease file
     'copy:dependencies'  // copy reaease file
+  ]);
+
+  grunt.registerTask('source-check', [  
+    'jshint:all',
   ]);
 
   // Default task.
