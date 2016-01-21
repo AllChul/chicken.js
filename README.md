@@ -12,9 +12,13 @@ Chicken.js written in AMD format. And It using jQuery for DOM parser. You can in
 $ sudo apt-get install nodejs
 
 $ sudo npm install -g bower
-$ bower install
+$ sudo npm install -g grunt-cli
 
 $ git clone https://github.com/AllChul/chicken.js.git
+
+$ npm install
+$ bower install
+$ grunt build
 ```
 
 # Usages
