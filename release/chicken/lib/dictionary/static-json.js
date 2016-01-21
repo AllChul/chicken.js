@@ -1,0 +1,1 @@
+define(["jquery","core"],function(e,t){var n=function(n,r){var i=t.Config.repositoryAddress+"/"+t.Config.language+"-"+t.Config.locale+"/strings.json";e.getJSON(i,function(e){e!==undefined?t.Dictionary=e:t.Dictionary=undefined,typeof n=="function"&&n(t.Dictionary)})};return n});

@@ -1,0 +1,12 @@
+
+chicken.js
+----------------
+etc/version.js
+core.js
+env/config.js
+/Users/zvezda/Documents/Codes/AllChul/chicjen.js/bower_components/jquery/dist/jquery.js
+lib/dictionary/static-json.js
+lib/dictionary/server-json.js
+lib/loader.js
+lib/translator.js
+chicken.js

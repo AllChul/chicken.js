@@ -1,15 +1,15 @@
 // Chicken.js Library Init
 requirejs.config({
-    "baseUrl": "../sources",
+    "baseUrl": "lib/chicken",
     "paths": {
-      "jquery": "../bower_components/jquery/dist/jquery"
+      "jquery": "lib/jquery/dist/jquery"
     }
 });
 
 // Translation example codes using Chicken.js
 requirejs([
 	"chicken",
-    "dev/dev-console"
+    //"dev/dev-console"
 ],function (CC) {
 
     // Configulations

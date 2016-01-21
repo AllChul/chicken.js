@@ -1,0 +1,36 @@
+{
+  "name": "chicken.js",
+  "version": "1.0.0",
+  "description": "Chicken.js is internalization library based on javascript. ",
+  "main": "chicken.js",
+  "directories": {
+    "example": "examples",
+    "test": "tests"
+  },
+  "dependencies": {
+    "grunt": "^0.4.5",
+    "grunt-contrib-clean": "^0.7.0",
+    "grunt-contrib-concat": "^0.4.0",
+    "grunt-contrib-copy": "^0.5.0",
+    "grunt-contrib-jshint": "^0.10.0",
+    "grunt-contrib-requirejs": "^0.4.4",
+    "grunt-contrib-uglify": "^0.4.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AllChul/chicken.js.git"
+  },
+  "keywords": [
+    "i18n"
+  ],
+  "author": "Pilmo Kang",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/AllChul/chicken.js/issues"
+  },
+  "homepage": "https://github.com/AllChul/chicken.js#readme"
+}

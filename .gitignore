@@ -1,2 +1,5 @@
 # Bower auto installed components
 bower_components/
+node_modules/
+examples/lib/
+.DS_Store
