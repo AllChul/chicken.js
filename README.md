@@ -39,8 +39,9 @@ Please see [Interface Control Document](./documents/icd/).
 ### For development
 * node.js 
 * bower
+* grunt
 * require.js ~ 2.x.x
-* jquery ~ 2.x.x
+* jquery ~ 2.x.x 
 
 # Licence
 MIT
