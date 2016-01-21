@@ -2,13 +2,15 @@
 requirejs.config({
     "baseUrl": "../sources",
     "paths": {
-      "jquery": "../bower_components/jquery/dist/jquery"
+      "jquery": "../bower_components/jquery/dist/jquery",
+      "chickenDev" : "dev/chicken-dev"
     }
 });
 
 // Translation example codes using Chicken.js
 requirejs([
-	"chicken"
+	"chicken",
+    "chickenDev"
 ],function (CC) {
 
     // Configulations
@@ -18,8 +20,8 @@ requirejs([
         repositoryAddress : "./i18n/",
         // Dictionary Setup
         pageId : "example",
-        language: "ja",
-        locale: "jp"
+        language: "ko",
+        locale: "kr"
     });
 
     // Load translation dictionary and run translate
