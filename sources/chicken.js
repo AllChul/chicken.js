@@ -9,5 +9,7 @@ define([
 	CC.Load = loader;
 	CC.Translate = translator;
 
+	window.Chicken = CC;
+
 	return CC;
 });

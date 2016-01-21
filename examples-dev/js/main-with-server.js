@@ -14,12 +14,12 @@ requirejs([
     // Configulations
     CC.Config({
         // Repository Setup
-        repositoryType : "static-json",
-        repositoryAddress : "./i18n/",
+        repositoryType : "server-json",
+        repositoryAddress : "http://192.168.0.27:3000/api/transAll",
         // Dictionary Setup
         pageId : "example",
-        language: "ja",
-        locale: "jp"
+        language: "ko",
+        locale: "kr"
     });
 
     // Load translation dictionary and run translate

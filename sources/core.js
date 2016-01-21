@@ -14,12 +14,19 @@ define([
 		Config : undefined,
 		Load : undefined,
 		Translate : undefined,
+		Debug : {
+			TranslateList : [],
+			NewTranslations : []
+		},
 
 		Error : function(message, err){
 			if(typeof err == "function") err(message);
 			else console.log("[Error] "+message);
 		}
 	}
+
+	window.ChickenEvent = {};
+	window.ChickenEvent.TranslateComplete = new Event('translate-complated');
 
 	return new Chicken;
 });

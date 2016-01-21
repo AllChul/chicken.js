@@ -1,8 +1,9 @@
 define([
 	"jquery",
 	"core",
-	"lib/dictionary/static-json"
-], function(jQuery, CC , StaticJsonDictionary){
+	"lib/dictionary/static-json",
+	"lib/dictionary/server-json"
+], function(jQuery, CC , StaticJsonDictionary, ServerJsonDictionary){
 
 	// Load translation dictionary
 	// @param : pageId, lang, locale, cbLoadComplete, err
@@ -35,6 +36,9 @@ define([
 		{
 			case "static-json":
 				StaticJsonDictionary(cbLoadComplete, err);
+				break;
+			case "server-json":
+				ServerJsonDictionary(cbLoadComplete, err);
 				break;
 			default:
 				this.Error("Repository type '"+CC.Config.repositoryType+"' is not supported ", err);

@@ -9,6 +9,9 @@ define([
 			return;
 		}
 
+		CC.Debug.TranslateList = [];
+		CC.Debug.NewTranslations = [];
+
 		jQuery("[chicken]").each(function(index, translateObj){
 
 			var translateData = undefined;
@@ -30,9 +33,18 @@ define([
 			}
 
 			//Replace element's body to translate
-			if(translateData !== undefined && translateData.length > 0)
+			if(translateData !== undefined && translateData.length > 0 && translateData[0].trans_value !== "" && translateData[0].trans_value !== undefined)
 			{
 				jQuery(this).html( translateData[0].trans_value );
+				CC.Debug.TranslateList.push(translateData[0]);
+			}
+			else
+			{
+				CC.Debug.NewTranslations.push({
+					"chicken" : jQuery(this).attr("chicken") , 
+					"season" : jQuery(this).attr("season"), 
+					"trans_value" : this.innerHTML
+				});
 			}
 			
 		});
@@ -41,6 +53,8 @@ define([
 		if(cbTranslateComplete !== undefined && typeof cbTranslateComplete === "function"){
 			cbTranslateComplete();
 		}
+
+		window.dispatchEvent(window.ChickenEvent.TranslateComplete);
 	};
 	
 	return _Translate;
